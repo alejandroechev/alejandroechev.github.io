@@ -1,28 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="card.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Git Grok Cards"
-    />
-    <script src="card.js"></script>
-    <title>Git Grok Cards</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="scene scene--card">
-        <div class="card">
-          <div class="card__face card__face--front">
-            <img class="image" src="landing[back].png"/>
-          </div>
-          <div class="card__face card__face--back">
-            <img class="image" src="landing[face].png"/>
-          </div>
-        </div>
-      </div>
-    </div>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Git Grok Cards</title>
+		<link href="https://fonts.googleapis.com/css?family=Heebo:400,400i,500,700|Titillium+Web:600" rel="stylesheet">
+		<link rel="stylesheet" href="_resources/scss/style.css">
+		<link rel="stylesheet" href="_resources/scss/landing.css">
+	</head>
+	<body class="is-boxed">
+		<div class="body-wrap boxed-container">
+			<header class="site-header">
+				<div class="container">
+					<div class="site-header-inner">
+						<div class="brand header-brand">
+							<h1 class="m-0">
+								<a href="#">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+										<title>Git Grok Cards</title>
+										<defs>
+											<linearGradient x1="0%" y1="0%" y2="100%" id="logo-a">
+												<stop stop-color="#6B8A7A" offset="0%"/>
+												<stop stop-color="#6B8A7A" stop-opacity=".32" offset="100%"/>
+											</linearGradient>
+											<linearGradient x1="0%" y1="0%" y2="100%" id="logo-b">
+												<stop stop-color="#6B8A7A" offset="0%"/>
+												<stop stop-color="#6B8A7A" stop-opacity=".32" offset="100%"/>
+											</linearGradient>
+											<linearGradient x1="0%" y1="0%" y2="100%" id="logo-c">
+												<stop stop-color="#78F9FF" stop-opacity=".24" offset="0%"/>
+												<stop stop-color="#DAD3BE" offset="55.496%"/>
+												<stop stop-color="#DAD3BE" stop-opacity=".24" offset="100%"/>
+											</linearGradient>
+										</defs>
+										<g fill="none" fill-rule="evenodd">
+											<path d="M4 0h12v16H0V4a4 4 0 0 1 4-4z" fill="url(#logo-a)"/>
+											<path d="M16 16h16v12a4 4 0 0 1-4 4H16V16z" fill="url(#logo-b)"/>
+											<path d="M11.5 20.5H.5v1h10v10h1v-11z" stroke="url(#logo-c)" transform="matrix(-1 0 0 1 12 0)"/>
+											<path d="M31.5.5h-11v1h10v10h1V.5z" stroke="url(#logo-c)" transform="matrix(1 0 0 -1 0 12)"/>
+										</g>
+									</svg>
+								</a>
+							</h1>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section class="hero">
+					<div class="container">
+						<div class="hero-inner">
+							<div class="hero-copy">
+								<h1 class="hero-title mt-0 is-revealing">Master Git with a Deck of Fantastical Cards</h1>
+								<p class="hero-paragraph is-revealing">Git Grok Cards are your ultimate companion for learning Git commands with ease and enjoyment.</p>
+								<p>Each flashcard features a stunning tree creature image that evokes the essence of the command, covering all the essential Git commands for both new and seasoned developers.</p>
+								<div class="hero-form field field-grouped is-revealing">
+									<!--<div class="control control-expanded">
+										<input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+									</div>-->
+									<div class="control control-expanded">
+										<a class="button button-primary button-block" href="#">Get Your Deck Now!</a>
+									</div>
+								</div>
+							</div>
+							<div class="hero-illustration">
+								<div class="hero-bg">
+									<svg width="720" height="635" xmlns="http://www.w3.org/2000/svg">
+										<defs>
+											<linearGradient x1="50%" y1="0%" x2="50%" y2="97.738%" id="a">
+												<stop stop-color="#151616" offset="0%"/>
+												<stop stop-color="#222424" offset="100%"/>
+											</linearGradient>
+										</defs>
+										<path d="M0 0h720v504.382L279.437 630.304c-53.102 15.177-108.454-15.567-123.631-68.669-.072-.25-.142-.5-.211-.75L0 0z" fill="url(#a)" fill-rule="evenodd"/>
+									</svg>
+								</div>
+								<div class="hero-square hero-square-1 is-moving-object is-rotating">
+									<img src="/_resources/imgs/fetch-image.png" width="220" class="landing-image"/>
+								</div>
+								<div class="hero-square hero-square-2 is-moving-object is-rotating">
+									<img src="/_resources/imgs/status-image.png" width="64" class="landing-image"/>
+								</div>
+								<div class="hero-square hero-square-3 is-moving-object is-rotating">
+									<img src="/_resources/imgs/init-image.png" width="100" class="landing-image"/>
+								</div>
+								<div class="hero-square hero-square-4 is-moving-object is-rotating">
+									<img src="/_resources/imgs/stash-image.png" width="320" class="landing-image"/>
+								</div>
+								<div class="hero-square hero-square-5 is-moving-object is-rotating">
+									<img src="/_resources/imgs/checkout-image.png" width="140" class="landing-image"/>
+								</div>
+								<div class="hero-square hero-square-6 is-moving-object is-rotating">
+									<img src="/_resources/imgs/commit-image.png" width="128" class="landing-image"/>
+								</div>
+								<div class="hero-square hero-square-7 is-moving-object is-rotating">
+									<img src="/_resources/imgs/clone-image.png" width="64" class="landing-image"/>
+								</div>
+								<div class="hero-square hero-square-8 is-moving-object is-rotating">
+									<img src="/_resources/imgs/restore-image.png" width="64" class="landing-image"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="features section">
+					<div class="container">
+						<div class="features-inner section-inner">
+							<div class="features-wrap">
+								<div class="feature">
+									<div class="feature-inner">
+										<div class="feature-header mb-16">
+											<div class="feature-icon mr-16">
+												<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+													<g fill-rule="nonzero" fill="none">
+														<path d="M7 8H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1zM19 8h-6a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#DAD3BE"/>
+														<path d="M19 20h-6a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#6B8A7A"/>
+														<path d="M31 8h-6a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#DAD3BE"/>
+														<path d="M7 20H1a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#6B8A7A"/>
+														<path d="M7 32H1a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#DAD3BE"/>
+														<path d="M29.5 18h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5z" fill="#6B8A7A"/>
+														<path d="M17.5 30h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5zM29.5 30h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5z" fill="#DAD3BE"/>
+													</g>
+												</svg>
+											</div>
+											<h4 class="feature-title m-0">Visual Learning</h4>
+										</div>
+										<p class="text-sm mb-0">Unique, hand-crafted tree creature images to help you associate commands with their functions.</p>
+									</div>
+								</div>
+								<div class="feature">
+									<div class="feature-inner">
+										<div class="feature-header mb-16">
+											<div class="feature-icon mr-16">
+												<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+													<g fill-rule="nonzero" fill="none">
+														<path d="M4 12H0V5a5.006 5.006 0 0 1 5-5h7v4H5a1 1 0 0 0-1 1v7z" fill="#6B8A7A"/>
+														<path d="M32 12h-4V5a1 1 0 0 0-1-1h-7V0h7a5.006 5.006 0 0 1 5 5v7zM12 32H5a5.006 5.006 0 0 1-5-5v-7h4v7a1 1 0 0 0 1 1h7v4z" fill="#DAD3BE"/>
+														<path d="M27 32h-7v-4h7a1 1 0 0 0 1-1v-7h4v7a5.006 5.006 0 0 1-5 5z" fill="#6B8A7A"/>
+													</g>
+												</svg>
+											</div>
+											<h4 class="feature-title m-0">Comprehensive Explanations</h4>
+										</div>
+										<p class="text-sm mb-0">Clear explanations and step-by-step cheat sheets to reinforce your learning.</p>
+									</div>
+								</div>
+								<div class="feature">
+									<div class="feature-inner">
+										<div class="feature-header mb-16">
+											<div class="feature-icon mr-16">
+												<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+													<g fill="none" fill-rule="nonzero">
+														<path d="M16 9c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4z" fill="#DAD3BE"/>
+														<path d="M27 9c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4z" fill="#6B8A7A"/>
+														<path d="M27 12c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z" fill="#DAD3BE"/>
+														<path d="M5 23c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z" fill="#6B8A7A"/>
+														<path d="M27 23c-1.859 0-3.41 1.28-3.858 3h-3.284A3.994 3.994 0 0 0 17 23.142v-3.284c1.72-.447 3-2 3-3.858 0-2.206-1.794-4-4-4-1.859 0-3.41 1.28-3.858 3H8.858A3.994 3.994 0 0 0 6 12.142V8.858c1.72-.447 3-2 3-3.858 0-2.206-1.794-4-4-4S1 2.794 1 5c0 1.858 1.28 3.41 3 3.858v3.284c-1.72.447-3 2-3 3.858 0 2.206 1.794 4 4 4 1.859 0 3.41-1.28 3.858-3h3.284A3.994 3.994 0 0 0 15 19.858v3.284c-1.72.447-3 2-3 3.858 0 2.206 1.794 4 4 4 1.859 0 3.41-1.28 3.858-3h3.284c.447 1.72 2 3 3.858 3 2.206 0 4-1.794 4-4s-1.794-4-4-4z" fill="#DAD3BE"/>
+													</g>
+												</svg>
+											</div>
+											<h4 class="feature-title m-0">Essential Commands</h4>
+										</div>
+										<p class="text-sm mb-0">18 essential Git commands, carefully selected to ensure you have a solid foundation.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="site-footer">
+				<div class="footer-bg">
+					<svg width="385" height="305" xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<linearGradient x1="50%" y1="34.994%" x2="50%" y2="97.738%" id="footer-bg">
+								<stop stop-color="#151616" offset="0%"/>
+								<stop stop-color="#222424" offset="100%"/>
+							</linearGradient>
+						</defs>
+						<path d="M384.557 116.012V305H0L210.643 0l173.914 116.012z" fill="url(#footer-bg)" fill-rule="evenodd"/>
+					</svg>
+				</div>
+				<div class="container">
+					<div class="site-footer-inner has-top-divider">
+						<div class="footer-copyright">&copy; 2024 Git Grok Cards, all rights reserved</div>
+						<ul class="footer-social-links list-reset">
+							<li>
+								<a href="mailto:git@grokcards.com">
+									<span class="screen-reader-text">Mail</span>
+									<svg fill="#FFFFFF" height="16" width="16" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 75.294 75.294" xml:space="preserve">
+										<path d="M66.097,12.089h-56.9C4.126,12.089,0,16.215,0,21.286v32.722c0,5.071,4.126,9.197,9.197,9.197h56.9 c5.071,0,9.197-4.126,9.197-9.197V21.287C75.295,16.215,71.169,12.089,66.097,12.089z M61.603,18.089L37.647,33.523L13.691,18.089 H61.603z M66.097,57.206h-56.9C7.434,57.206,6,55.771,6,54.009V21.457l29.796,19.16c0.04,0.025,0.083,0.042,0.124,0.065 c0.043,0.024,0.087,0.047,0.131,0.069c0.231,0.119,0.469,0.215,0.712,0.278c0.025,0.007,0.05,0.01,0.075,0.016 c0.267,0.063,0.537,0.102,0.807,0.102c0.001,0,0.002,0,0.002,0c0.002,0,0.003,0,0.004,0c0.27,0,0.54-0.038,0.807-0.102 c0.025-0.006,0.05-0.009,0.075-0.016c0.243-0.063,0.48-0.159,0.712-0.278c0.044-0.022,0.088-0.045,0.131-0.069 c0.041-0.023,0.084-0.04,0.124-0.065l29.796-19.16v32.551C69.295,55.771,67.86,57.206,66.097,57.206z">
+										</path>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="_resources/js/main.js"></script>
+	</body>
 </html>
