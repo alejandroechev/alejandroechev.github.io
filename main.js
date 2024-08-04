@@ -89,3 +89,8 @@
     ))
   }
 }())
+
+
+function notifyBuyButtonClicked(){
+  gtag('event', 'buy_clicked', {});
+}
